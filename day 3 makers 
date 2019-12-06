@@ -1,0 +1,683 @@
+Last login: Wed Nov 27 09:01:47 on console
+Julias-MacBook-Air:~ JuliaJones$ git init
+Reinitialized existing Git repository in /Users/JuliaJones/.git/
+Julias-MacBook-Air:~ JuliaJones$ rm -rf .git
+Julias-MacBook-Air:~ JuliaJones$ cd Documents/
+Julias-MacBook-Air:Documents JuliaJones$ git init
+Initialized empty Git repository in /Users/JuliaJones/Documents/.git/
+Julias-MacBook-Air:Documents JuliaJones$ git clone https://github.com/JulzJ0n3s/mastery-quizzes
+Cloning into 'mastery-quizzes'...
+remote: Enumerating objects: 205, done.
+remote: Total 205 (delta 0), reused 0 (delta 0), pack-reused 205
+Receiving objects: 100% (205/205), 57.94 KiB | 348.00 KiB/s, done.
+Resolving deltas: 100% (112/112), done.
+Julias-MacBook-Air:Documents JuliaJones$ cd mastery-quizzes/
+RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+you can ignore these warnings with 'rvm rvmrc warning ignore /Users/JuliaJones/Documents/mastery-quizzes/Gemfile'.
+To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+
+Required ruby-2.2.3 is not installed.
+To install do: 'rvm install "ruby-2.2.3"'
+Julias-MacBook-Air:mastery-quizzes JuliaJones$ ruby -v
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-darwin17]
+Julias-MacBook-Air:mastery-quizzes JuliaJones$ rvm install "ruby-2.2.3"
+Searching for binary rubies, this might take some time.
+No binary rubies available for: osx/10.13/x86_64/ruby-2.2.3.
+Continuing with compilation. Please read 'rvm help mount' to get more information on binary rubies.
+Checking requirements for osx.
+Installing requirements for osx.
+Updating system................................................................|
+Installing required packages: autoconf, automake, libtool, pkg-config, coreutils, libksba, zlib, openssl.........
+Updating certificates bundle '/usr/local/etc/openssl@1.1/cert.pem'
+Requirements installation successful.
+Installing Ruby from source to: /Users/JuliaJones/.rvm/rubies/ruby-2.2.3, this may take a while depending on your cpu(s)...
+ruby-2.2.3 - #downloading ruby-2.2.3, this may take a while depending on your connection...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 12.7M  100 12.7M    0     0  5410k      0  0:00:02  0:00:02 --:--:-- 5412k
+ruby-2.2.3 - #extracting ruby-2.2.3 to /Users/JuliaJones/.rvm/src/ruby-2.2.3...|
+ruby-2.2.3 - #applying patch /Users/JuliaJones/.rvm/patches/ruby/2.2.3/fix_installing_bundled_gems.patch.
+ruby-2.2.3 - #applying patch /Users/JuliaJones/.rvm/patches/ruby/2.2.3/openssl3.patch.
+ruby-2.2.3 - #configuring......................................................|
+ruby-2.2.3 - #post-configuration.
+ruby-2.2.3 - #compiling.........................................................
+ruby-2.2.3 - #installing..........
+ruby-2.2.3 - #making binaries executable..
+ruby-2.2.3 - #downloading rubygems-3.0.6
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  866k  100  866k    0     0  1304k      0 --:--:-- --:--:-- --:--:-- 1302k
+No checksum for downloaded archive, recording checksum in user configuration.
+ruby-2.2.3 - #extracting rubygems-3.0.6.....
+ruby-2.2.3 - #removing old rubygems........
+ruby-2.2.3 - #installing rubygems-3.0.6........................................|
+ruby-2.2.3 - #gemset created /Users/JuliaJones/.rvm/gems/ruby-2.2.3@global
+ruby-2.2.3 - #importing gemset /Users/JuliaJones/.rvm/gemsets/global.gems.....there was an error installing gem gem-wrappers
+.................there was an error installing gem rubygems-bundler
+.........................there was an error installing gem rvm
+.......
+ruby-2.2.3 - #generating global wrappers.................
+Error running 'run_gem_wrappers regenerate',
+please read /Users/JuliaJones/.rvm/log/1574855552_ruby-2.2.3/gemset.wrappers.global.log
+ruby-2.2.3 - #gemset created /Users/JuliaJones/.rvm/gems/ruby-2.2.3
+ruby-2.2.3 - #importing gemsetfile /Users/JuliaJones/.rvm/gemsets/default.gems evaluated to empty gem list
+ruby-2.2.3 - #generating default wrappers.................
+Error running 'run_gem_wrappers regenerate',
+please read /Users/JuliaJones/.rvm/log/1574855552_ruby-2.2.3/gemset.wrappers.default.log
+ruby-2.2.3 - #adjusting #shebangs for (gem irb erb ri rdoc testrb rake).
+Install of ruby-2.2.3 - #complete 
+Please be aware that you just installed a ruby that requires        2 patches just to be compiled on an up to date linux system.
+This may have known and unaccounted for security vulnerabilities.
+Please consider upgrading to ruby-2.6.3 which will have all of the latest security patches.
+Ruby was built without documentation, to build it run: rvm docs generate-ri
+Julias-MacBook-Air:mastery-quizzes JuliaJones$ cd
+Now using system ruby.
+Julias-MacBook-Air:~ JuliaJones$ cd
+Julias-MacBook-Air:~ JuliaJones$ cd Documents/
+Julias-MacBook-Air:Documents JuliaJones$ mkdir student_directory
+Julias-MacBook-Air:Documents JuliaJones$ cd student_directory/
+Julias-MacBook-Air:student_directory JuliaJones$ git init
+Initialized empty Git repository in /Users/JuliaJones/Documents/student_directory/.git/
+Julias-MacBook-Air:student_directory JuliaJones$ git:master
+-bash: git:master: command not found
+Julias-MacBook-Air:student_directory JuliaJones$ ecgo"# student-directory" >> README.md
+-bash: ecgo# student-directory: command not found
+Julias-MacBook-Air:student_directory JuliaJones$ echo "# student-directory" >> README.md
+Julias-MacBook-Air:student_directory JuliaJones$ git init
+Reinitialized existing Git repository in /Users/JuliaJones/Documents/student_directory/.git/
+Julias-MacBook-Air:student_directory JuliaJones$ git add README.md
+Julias-MacBook-Air:student_directory JuliaJones$ git commit -m "First Commit"
+[master (root-commit) cce7dd6] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Julias-MacBook-Air:student_directory JuliaJones$ remote add origin git@github.com:JulzJ0n3s/student-directory.git
+-bash: remote: command not found
+Julias-MacBook-Air:student_directory JuliaJones$ git remote add origin git@github.com:JulzJ0n3s/student-directory.git
+Julias-MacBook-Air:student_directory JuliaJones$ push -u origin master
+-bash: push: command not found
+Julias-MacBook-Air:student_directory JuliaJones$ git push -u origin master
+The authenticity of host 'github.com (140.82.118.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,140.82.118.3' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Julias-MacBook-Air:student_directory JuliaJones$ git remote add origin https://github.com/JulzJ0n3s/student-directory.git
+fatal: remote origin already exists.
+Julias-MacBook-Air:student_directory JuliaJones$ git remote remove origin
+Julias-MacBook-Air:student_directory JuliaJones$ git remote add origin https://github.com/JulzJ0n3s/student-directory.git
+Julias-MacBook-Air:student_directory JuliaJones$ git remote
+origin
+Julias-MacBook-Air:student_directory JuliaJones$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/JulzJ0n3s/student-directory.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git push
+Everything up-to-date
+Julias-MacBook-Air:student_directory JuliaJones$ cat README.md 
+The student directory script allows you to manage the list of students enrrlleed at villains a
+t Villains Academy
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+
+Julias-MacBook-Air:student_directory JuliaJones$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+
+Julias-MacBook-Air:student_directory JuliaJones$ git commit
+Aborting commit due to empty commit message.
+Julias-MacBook-Air:student_directory JuliaJones$ git commit -m "This is the 2nd commit"
+[master 315cd8f] This is the 2nd commit
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+Julias-MacBook-Air:student_directory JuliaJones$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 380 bytes | 380.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/JulzJ0n3s/student-directory.git
+   cce7dd6..315cd8f  master -> master
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git commit -m "This is the 2nd commit"
+[master a93157b] This is the 2nd commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Julias-MacBook-Air:student_directory JuliaJones$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 283 bytes | 283.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JulzJ0n3s/student-directory.git
+   315cd8f..a93157b  master -> master
+Julias-MacBook-Air:student_directory JuliaJones$ touch directory.rb
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Freddy Krueger
+The Joker
+Norman Bates
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git commit --m "the 3rd commit - list of students"
+[master 6a806a8] the 3rd commit - list of students
+ 1 file changed, 11 insertions(+)
+ create mode 100644 directory.rb
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Freddy Krueger
+The Joker
+Norman Bates
+Overall, we have11 great students
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Freddy Krueger
+The Joker
+Norman Bates
+Overall, we have 11 great students
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git commit --m "the 4th commit - list of students"
+[master ac99aa3] the 4th commit - list of students
+ 1 file changed, 4 insertions(+)
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Freddy Krueger
+The Joker
+Norman Bates
+11 Overall, we have 11 great students
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+directory.rb:6: syntax error, unexpected tSTRING_BEG, expecting ']'
+  "------------"
+directory.rb:15: syntax error, unexpected ']', expecting end-of-input
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Freddy Krueger
+The Joker
+Norman Bates
+
+
+ Overall, we have 11 great students
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Freddy Krueger
+The Joker
+Norman Bates
+
+
+Overall, we have 8 great students
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Norman Bates
+
+Overall, we have 10 great students
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+directory.rb:8: syntax error, unexpected tSTRING_BEG, expecting ']'
+  "Michael Corleone",
+directory.rb:8: syntax error, unexpected ',', expecting end-of-input
+  "Michael Corleone",
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+Joffrey Baratheon
+Norman Bates
+Overall, we have 11 great students
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Traceback (most recent call last):
+directory.rb:20:in `<main>': undefined method `student' for main:Object (NoMethodError)
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Overall, we have 11 great students
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Overall, we have 11 great students
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git commit --m "we just added an array"
+[master dd71a06] we just added an array
+ 1 file changed, 25 insertions(+), 15 deletions(-)
+ rewrite directory.rb (81%)
+Julias-MacBook-Air:student_directory JuliaJones$ git commit --m "we just added an array"
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   directory.rb
+
+no changes added to commit
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Traceback (most recent call last):
+	1: from directory.rb:34:in `<main>'
+directory.rb:29:in `print_footer': undefined local variable or method `students' for main:Object (NameError)
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Traceback (most recent call last):
+	1: from directory.rb:34:in `<main>'
+directory.rb:29:in `print_footer': undefined local variable or method `students' for main:Object (NameError)
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter
+Darth Vader
+Nurse Ratched
+Michael Corleone
+Alex DeLarge
+The Wicked Witch of the West
+Terminator
+Freddy Krueger
+The Joker
+Joffrey Baratheon
+Norman Bates
+Overall, we have 11 great students
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git commit --m "we have created a names.method that the student are passed through in the final arguement"
+[master 7baac4f] we have created a names.method that the student are passed through in the final arguement
+ 1 file changed, 18 insertions(+), 6 deletions(-)
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+directory.rb:6: syntax error, unexpected [, expecting ']'
+  ["Darth Vader",:november]
+directory.rb:16: syntax error, unexpected ']', expecting end-of-input
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter (november cohort)
+Darth Vader (november cohort)
+Nurse Ratched (november cohort)
+Michael Corleone (november cohort)
+Alex DeLarge (november cohort)
+The Wicked Witch of the West (november cohort)
+Terminator (november cohort)
+Freddy Krueger (november cohort)
+The Joker (november cohort)
+Joffrey Baratheon (november cohort)
+Norman Bates (november cohort)
+Overall, we have 11 great students
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git commit
+Aborting commit due to empty commit message.
+Julias-MacBook-Air:student_directory JuliaJones$ git commit --m "we have used array of arrays! & methods using each & do"
+[master 146f32b] we have used array of arrays! & methods using each & do
+ 1 file changed, 14 insertions(+), 12 deletions(-)
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter (november cohort)
+Darth Vader (november cohort)
+Nurse Ratched (november cohort)
+Michael Corleone (november cohort)
+Alex DeLarge (november cohort)
+The Wicked Witch of the West (november cohort)
+Terminator (november cohort)
+Freddy Krueger (november cohort)
+The Joker (november cohort)
+Joffrey Baratheon (november cohort)
+Norman Bates (november cohort)
+Overall, we have 11 great students
+Julias-MacBook-Air:student_directory JuliaJones$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git commit --m "We just created hashes! using symbols too!"
+-bash: !": event not found
+Julias-MacBook-Air:student_directory JuliaJones$ git commit -m "we have used array of arrays! & methods using each & do"
+[master 19b4c4a] we have used array of arrays! & methods using each & do
+ 4 files changed, 13 insertions(+), 13 deletions(-)
+ create mode 100644 Berlin}
+ create mode 100644 London,
+ create mode 100644 Paris,
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+directory.rb:41: syntax error, unexpected ',', expecting '='
+  students ,,{nam: name. chort: :november}
+directory.rb:41: syntax error, unexpected ':', expecting '}'
+  students ,,{nam: name. chort: :november}
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+please enter the names of the students
+To finish, just hit return twice
+Darth Varder
+Traceback (most recent call last):
+	1: from directory.rb:51:in `<main>'
+directory.rb:41:in `input_students': undefined local variable or method `students' for main:Object (NameError)
+Did you mean?  student
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+please enter the names of the students
+To finish, just hit return twice
+Julia Jones
+Alex Tucker
+Peter Pie    
+Joey Crowe
+Sam Smith
+
+The students of Villans Academy
+------------
+Dr. Hannibal Lecter (november cohort)
+Darth Vader (november cohort)
+Nurse Ratched (november cohort)
+Michael Corleone (november cohort)
+Alex DeLarge (november cohort)
+The Wicked Witch of the West (november cohort)
+Terminator (november cohort)
+Freddy Krueger (november cohort)
+The Joker (november cohort)
+Joffrey Baratheon (november cohort)
+Norman Bates (november cohort)
+Overall, we have 11 great students
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+please enter the names of the students
+To finish, just hit return twice
+Julia Jones
+Alex Tucker
+Peter Pie
+Joey Crowe
+Me
+
+The students of Villans Academy
+------------
+Julia Jones (november cohort)
+Alex Tucker (november cohort)
+Peter Pie (november cohort)
+Joey Crowe (november cohort)
+Me (november cohort)
+Overall, we have 5 great students
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+directory.rb:44: syntax error, unexpected '}', expecting =>
+... "Now we have #{{student_count}}"
+directory.rb:60: unterminated string meets end of file
+#  puts candy
+
+directory.rb:60: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+please enter the names of the students
+To finish, just hit return twice
+Julia Jones
+Now we have 1
+Alex Tucker
+Now we have 2
+
+The students of Villans Academy
+------------
+Julia Jones (november cohort)
+Alex Tucker (november cohort)
+Overall, we have 2 great students
+Julias-MacBook-Air:student_directory JuliaJones$ git add .
+Julias-MacBook-Air:student_directory JuliaJones$ git commit -m "I have asked for user input by inserting names directly"
+[master fa721a7] I have asked for user input by inserting names directly
+ 1 file changed, 27 insertions(+), 6 deletions(-)
+Julias-MacBook-Air:student_directory JuliaJones$ git push
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (22/22), 3.40 KiB | 434.00 KiB/s, done.
+Total 22 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/JulzJ0n3s/student-directory.git
+   a93157b..fa721a7  master -> master
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+please enter the names of the students
+To finish, just hit return twice
+Julia Jones
+Now we have 1 students
+Alex 
+Now we have 2 students
+James
+Now we have 3 students
+
+The students of Villans Academy
+------------
+Traceback (most recent call last):
+	3: from directory.rb:56:in `<main>'
+	2: from directory.rb:25:in `print'
+	1: from directory.rb:25:in `each'
+directory.rb:26:in `block in print': undefined local variable or method `count' for main:Object (NameError)
+Julias-MacBook-Air:student_directory JuliaJones$ 
+Julias-MacBook-Air:student_directory JuliaJones$ ruby directory.rb
+please enter the names of the students
+To finish, just hit return twice
+Julia 
+Now we have 1 students
+Alex
+Now we have 2 students
+
