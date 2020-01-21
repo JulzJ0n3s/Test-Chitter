@@ -1,6 +1,7 @@
 require 'pg'
 require 'sinatra/base'
 require 'uri' # goes into the post when sumbittiing a url
+require ''
 
 class ChitterManager < Sinatra::Base
 
@@ -10,12 +11,13 @@ class ChitterManager < Sinatra::Base
     end
 
     get '/peeps' do
-        @peeeps = peeps.all
+        @peeeps = Peeps.all
         erb :index
     end
 
-    get '/peeps/:id/new' do
-        erb :index
+    get '/peeps/new' do
+        @peeeps = Peeps.all
+        erb :peeps
     end
 
     post '/peeps/lastest' do

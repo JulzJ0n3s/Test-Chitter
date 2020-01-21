@@ -6,9 +6,9 @@ describe Peeps do
         connection = PG.connect(dbname: 'chitter_manager')
     
         # Add the test data
-        connection.exec("INSERT INTO chitter_peeps (title, peep, time_id) VALUES ('Where have you been?', 'Hello Good people, Welcome to database week, I'm your Chitter bot! This is a test peep', NOW()");
+        connection.exec("INSERT INTO chitter_peeps (title, peep, time_id) VALUES ('Where have you been?', 'Hello Good people, Welcome to database week, I am your Chitter bot! This is a test peep', NOW());")
     
-        peeeps = peep.all
+        peeeps = Peeps.all
     
         expect(peeeps).to include('Where have you been?')
         

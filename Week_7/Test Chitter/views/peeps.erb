@@ -1,7 +1,14 @@
 
 <ul>
-
-    <form action="/peeps/<%= peeps.id %>/new" method="get">
-            <input type="submit" value="Add Comment" />
+<% @peeeps.each do |view| %>
+    <li id="<%= view.id%>" > </li>
+    <li time_id="<%= view.time_id%>" ></li>
+    Posted Comments
+    <%= view.title %>
+    <%= view.peeps %>
+   <form action="/peeps/new" method="get">
+      <input type="submit" value="Create New Comment" />
     </form>
+<% end %>
 </ul>
+   
