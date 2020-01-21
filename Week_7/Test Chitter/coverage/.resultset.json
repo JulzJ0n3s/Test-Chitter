@@ -4,8 +4,8 @@
       "/Users/JuliaJones/Documents/Julia_Makers/Week_7/Test Chitter/spec/feature/set_up_chitter_spec.rb": [
         1,
         1,
-        0,
-        0,
+        1,
+        1,
         0,
         null,
         null
@@ -37,16 +37,19 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
-        0,
-        0,
+        1,
+        1,
         0,
         null,
         null
       ],
       "/Users/JuliaJones/Documents/Julia_Makers/Week_7/Test Chitter/lib/peeps.rb": [
-
+        null,
+        1,
+        null,
+        null
       ],
       "/Users/JuliaJones/Documents/Julia_Makers/Week_7/Test Chitter/spec/v_peeps_spec.rb": [
         null,
@@ -64,6 +67,6 @@
         null
       ]
     },
-    "timestamp": 1579600894
+    "timestamp": 1579601041
   }
 }
