@@ -27,9 +27,12 @@ class Peeps
     end
 
 
-    # def reverse(reversed_database)
-    #     connection = PG.connect(dbname: 'chitter_manager_test')
-    #     result.reservse.map do |peeep|
-    #     end
+    def self.rev
+        connection = PG.connect(dbname: 'chitter_manager_test')
+        result = connection.exec('SELECT * FROM chitter_peeps ORDER BY id DESC')
+        result.map do |peeep|
+        Peeps.new(id: peeep['id'], title: peeep['title'], peep: peeep['peep'], time_id: peeep['time_id'])
+        end
+    end
 
 end

@@ -4,13 +4,19 @@ Chitter Challenge
 Julia's notes:
 -------
 
-1. CREATE TABLE
+1. CREATE 2 TABLE one with Pkey = the chitter_peeps(TABLE 1) and the other with an Fkey = the chitter_users(TABLE 1) 
 2.
 3.
 
 
-
-
+```
+As a user
+ 1. view posts
+ 2. create new peep
+ 3. view in order of the latest
+ 4. sign up with my email address
+ 
+````
 
 * Challenge time: rest of the day and weekend, until Monday 9am
 * Feel free to use Google, your notes, books, etc. but work on your own

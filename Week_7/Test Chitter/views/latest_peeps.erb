@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
 
-<title>Welcome to Chitter</title>  
+<title>Chitter Peeps</title>  
 
-<link href="./css/main.3da94fde.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
 <style>
 body {
     background-color: #ccf3ff;
@@ -17,20 +17,7 @@ h1 {
 p{
     text-align: center;
 }
-.homepage_links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
 
-button{
-    height:20px; 
-    width:100px; 
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
-    left:50%;
-}
 </style>
 </head>
 <header>
@@ -46,30 +33,45 @@ button{
       <nav class="navbar-fullscreen" id="navbar-middle">
         <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <ul class="navbar-fullscreen-links">
-          <li><a href="./bookmark" title="">Review Peeps</a></li>
-          <li><a href=".//bookmark/new" title="">Create a New Peep </a></li>
+          <li><a href="./peeps" title="">Review Peeps</a></li>
+          <li><a href="./peeps/new" title="">Create a New Peep </a></li>
           <%# <li><a href="./about.html" title="">About me</a></li>
           <li><a href="./components.html" title="">Components</a></li> %>
         </ul>
     </div>
 </nav>
-</header>  
-<br>
-<br>
-<br>
+</header>
 <body>
-    <h1>Hello Peepers!</h1> 
-    <h1>Welcome to Chitter </h1>
-    <p> Please use the toogle bar to create and view peeps </p>
-    <div class="homepage_links">
-    <a href class="btn btn-primary btn-lg" action="/users/new" > Sign up </a><a href class="btn btn-primary btn-lg"> Log in </a>
-    </div>
-        <div class="hero-full-container background-image-container white-text-container"> 
-             <img src="/images/peeper_unsplash.jpg" alt="" height="600" width="1200">
-        </div>
+<br>
+<br>
+<br>
+<h1>Latest Peeps</h1>
+<br>
+<ul>
+    <form action="/peeps/new" method="get">
+          <input type="submit" value="Create a New Peep" />
+    </form>
+<br>
+  <% @latest.each do |view| %>
+      <li> Unique Peep no.: <%= view.id%> 
+      <li> Time of Peep: <%= view.time_id%> 
+      
+      <h5>Subject:</h5><p><%= view.title %><br></p>
+    
+      <h5>Peep:</h5><p><%= view.peep %></p>
+
+      ________________________________
+  <% end %>
+  <br>
+  <br>
+
+    <form action="/peeps/new" method="get">
+          <input type="submit" value="Create a New Peep" />
+    </form>
 
 
-    <script>
+</ul>
+   <script>
     document.addEventListener("DOMContentLoaded", function (event) {
         navbarFixedTopAnimation();
         closeMenuBeforeGoingToPage();
@@ -83,18 +85,8 @@ button{
         navActivePage();
         });
     </script>
-    <script type="text/javascript" src="./js/main.4c6e144e.js"></script></body>
+    <script type="text/javascript" src="/js/main.4c6e144e.js"></script></body>
 </body>
 </html>
-<%# <br>
 
-<form action="">
-<button type="submit" value="Review"> Chitter Sign Up </button> 
-</form> 
-
-<br>
-
-<form action="">
-<button type="submit" value="create a new bookmark"> Chitter Sign Up </button> 
-</form> 
-<br> %>
+   

@@ -5,7 +5,7 @@
 
 <title>Welcome to Chitter</title>  
 
-<link href="./css/main.3da94fde.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
 <style>
 body {
     background-color: #ccf3ff;
@@ -17,11 +17,6 @@ h1 {
 p{
     text-align: center;
 }
-.homepage_links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
 
 button{
     height:20px; 
@@ -58,15 +53,17 @@ button{
 <br>
 <br>
 <body>
-    <h1>Hello Peepers!</h1> 
-    <h1>Welcome to Chitter </h1>
-    <p> Please use the toogle bar to create and view peeps </p>
-    <div class="homepage_links">
-    <a href class="btn btn-primary btn-lg" action="/users/new" > Sign up </a><a href class="btn btn-primary btn-lg"> Log in </a>
-    </div>
-        <div class="hero-full-container background-image-container white-text-container"> 
-             <img src="/images/peeper_unsplash.jpg" alt="" height="600" width="1200">
-        </div>
+    <h1>Sign up to Chitter </h1>
+    
+      <form action="/users" method="POST">
+        <input type="text" name="name"  placeholder="name"/>
+        <input type="text" name="surname" placeholder="surname"/>
+         <input type="email" name="email_address" placeholder="email"/>
+        <input type="text" name="username" placeholder="create your own username"/>
+        <input type="password" name="password" placeholder="password" />
+        <input type="submit" value="Submit" />
+      </form>
+
 
 
     <script>
@@ -83,7 +80,7 @@ button{
         navActivePage();
         });
     </script>
-    <script type="text/javascript" src="./js/main.4c6e144e.js"></script></body>
+    <script type="text/javascript" src="/js/main.4c6e144e.js"></script></body>
 </body>
 </html>
 <%# <br>
