@@ -19,11 +19,12 @@ class ChitterManager < Sinatra::Base
 
     get '/peeps/new' do
         @peeeps = Peeps.all
+        Peeps.create(peep: params[:peep], title: params[:title])
         erb :new
     end
 
     post '/peeps' do 
-        Peeps.create(peeps: params[:peeps], title: params[:title])
+        Peeps.create(peep: params[:peep], title: params[:title])
         redirect '/peeps'
     end
 

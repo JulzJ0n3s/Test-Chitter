@@ -20,15 +20,16 @@ class Peeps
         end
     end
 
-    # def self.create(title:, peep:)
-    #     connection = PG.connect(dbname: 'chitter_manager_test')
-    #     result = connection.exec("INSERT INTO chitter_peeps (peep, title, time_id) VALUES('#{peep}', '#{title}', NOW()) RETURNING id, title, peep, time_id;")
-    # end
+    def self.create(title:, peep:)
+        connection = PG.connect(dbname: 'chitter_manager_test')
+        peeep = connection.exec("INSERT INTO chitter_peeps (peep, title, time_id) VALUES('#{peep}', '#{title}', NOW()) RETURNING id, title, peep, time_id;")
+        Peeps.new(id: peeep[0]['id'], title: peeep[0]['title'], peep: peeep[0]['peep'], time_id: peeep[0]['time_id'])
+    end
 
 
     # def reverse(reversed_database)
     #     connection = PG.connect(dbname: 'chitter_manager_test')
-    #     result.map do |peeep|
+    #     result.reservse.map do |peeep|
     #     end
 
 end
