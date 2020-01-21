@@ -1,4 +1,3 @@
-
 require_relative './setup_test_database'
 
 ENV['ENVIRONMENT'] = 'test'
@@ -24,7 +23,7 @@ require File.join(File.dirname(__FILE__), '..', 'chitter_app.rb')
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
-# require_relative './setup_test_database'
+
 
 require 'simplecov'
 require 'simplecov-console'

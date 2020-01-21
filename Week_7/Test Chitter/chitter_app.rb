@@ -5,7 +5,7 @@ require 'uri' # goes into the post when sumbittiing a url
 class ChitterManager < Sinatra::Base
 
     get '/' do
-        "Hello Peeper!, Welcome to Chitter"
+        "Hello Peeper!" "Welcome to Chitter"
         erb :index
     end
 
