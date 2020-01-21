@@ -1,6 +1,37 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/JuliaJones/Documents/Julia_Makers/Week_7/Test Chitter/spec/a_new_peep_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/JuliaJones/Documents/Julia_Makers/Week_7/Test Chitter/spec/feature/a_new_created_peep_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
       "/Users/JuliaJones/Documents/Julia_Makers/Week_7/Test Chitter/spec/feature/set_up_chitter_spec.rb": [
         1,
         1,
@@ -11,6 +42,10 @@
         null
       ],
       "/Users/JuliaJones/Documents/Julia_Makers/Week_7/Test Chitter/spec/feature/viewing_post_message_spec.rb": [
+        1,
+        null,
+        1,
+        1,
         1,
         null,
         1,
@@ -34,19 +69,6 @@
         null,
         null
       ],
-      "/Users/JuliaJones/Documents/Julia_Makers/Week_7/Test Chitter/lib/peeps.rb": [
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        6,
-        null,
-        null,
-        null
-      ],
       "/Users/JuliaJones/Documents/Julia_Makers/Week_7/Test Chitter/spec/v_peeps_spec.rb": [
         1,
         null,
@@ -56,6 +78,8 @@
         1,
         null,
         null,
+        1,
+        1,
         1,
         null,
         1,
@@ -67,6 +91,6 @@
         null
       ]
     },
-    "timestamp": 1579605393
+    "timestamp": 1579619667
   }
 }

@@ -1,7 +1,9 @@
 require 'pg'
 require 'sinatra/base'
+require './lib/peeps'
+require './spec/database_helper'
 require 'uri' # goes into the post when sumbittiing a url
-require ''
+
 
 class ChitterManager < Sinatra::Base
 
@@ -12,12 +14,17 @@ class ChitterManager < Sinatra::Base
 
     get '/peeps' do
         @peeeps = Peeps.all
-        erb :index
+        erb :peeps
     end
 
     get '/peeps/new' do
         @peeeps = Peeps.all
-        erb :peeps
+        erb :new
+    end
+
+    post '/peeps' do 
+        Peeps.create(peeps: params[:peeps], title: params[:title])
+        redirect '/peeps'
     end
 
     post '/peeps/lastest' do
