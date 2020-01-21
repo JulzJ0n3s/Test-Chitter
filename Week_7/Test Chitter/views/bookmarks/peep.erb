@@ -1,0 +1,15 @@
+<ul>
+<% @bookmarks.each do |bookmark| %>
+<ul class="bookmark" id="<%= bookmark.id %>">
+<a href = "<%= bookmark.url %>" target="_blank">
+    <%= bookmark.title %>
+
+<form action=" " method="POST" >
+
+    <input type="text" name="url" placeholder="new url">
+    <input type="text" name="title" placeholder ="new title">
+    <input type="submit" name="Submit">
+</ul>    
+</form>
+<% end %>
+</ul>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+<title>My Bookmark Manager</title>  
+
+<link href="./css/main.3da94fde.css" rel="stylesheet">
+<style>
+body {
+    background-color: #ccf3ff;
+}
+h1 {
+    background-color: #ffffff;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.homepage_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+button{
+    height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+}
+</style>
+</head>
+<header>
+<nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+      <nav class="navbar-fullscreen" id="navbar-middle">
+        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <ul class="navbar-fullscreen-links">
+          <li><a href="./bookmark" title="">Review My Bookmarks</a></li>
+          <li><a href=".//bookmark/new" title="">Create New Bookmark</a></li>
+          <%# <li><a href="./about.html" title="">About me</a></li>
+          <li><a href="./components.html" title="">Components</a></li> %>
+        </ul>
+    </div>
+</nav>
+</header>  
+<br>
+<br>
+<br>
+<body>
+    <h1> Bookmark Manager </h1>
+    <p> Please use the toogle bar to create and view bookmarks </p>
+    <div class="homepage_links">
+    <a href class="btn btn-primary btn-lg"> Sign up </a><a href class="btn btn-primary btn-lg"> Log in </a>
+    </div>
+        <div class="hero-full-container background-image-container white-text-container"> 
+             <img src="/images/chiara_unsplash_bookmark.jpg" alt="" height="400" width="400">
+        </div>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        navbarFixedTopAnimation();
+        closeMenuBeforeGoingToPage();
+    });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+        navbarToggleSidebar();
+        closeMenuBeforeGoingToPage();
+        navActivePage();
+        });
+    </script>
+    <script type="text/javascript" src="./js/main.4c6e144e.js"></script></body>
+</body>
+</html>
+<%# <br>
+
+<form action="">
+<button type="submit" value="Review"> Chitter Sign Up </button> 
+</form> 
+
+<br>
+
+<form action="">
+<button type="submit" value="create a new bookmark"> Chitter Sign Up </button> 
+</form> 
+<br> %>
